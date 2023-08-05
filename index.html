@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>JS-1</title>
+
+      <style></style>
+   </head>
+   <body>
+      <script>
+         console.log("Merhaba JS");
+
+         // DEĞİŞKENLER ve DEŞKEN OLUŞTURMA : const: tek değer atanır & let: istediginiz kadar değer verilebilir
+         const isim = "Mami"; // String değişken türü, düz yazı tipindeki değerleri tutar ve bunu " " işaretleri içinde tutarız.
+         // const isim; ---> Bu şekilde tanımlama yapılamaz. Bir başlangıc değeri (initial) değeri giriilmesi zorunludur
+         let soyisim = "Delibas";
+
+         // isim="Yeni isim"  ----> const ön ekiyle oluşturulan değikenlere tekrar yeni değer tanımlaması yapılamaz
+
+         let tamIsim = isim + " " + soyisim; // Değişkenleri + işareti ile bölebiliriz
+         console.log(tamIsim);
+
+         soyisim = "Yeni Soyad";
+         console.log(soyisim);
+
+         // MATEMATİKSEL İFADELER
+
+         const number1 = 5; // number : tırnak işareti kullanılmaz
+         const number2 = 10;
+         const number3 = "4";
+
+         const calculate1 = number2 / number1; // Bölme
+         const calculate2 = number1 * number2; // Çarpma
+         const calculate3 = number1 + number2; // Toplama
+         const calculate4 = number2 - number1; // Çıkartma
+         const calculate5 = 30 * 2 - 5;
+         const calculate6 = number2 + Number(number3); // Stringi Numbere cevirme
+         // String ve Number toplanırsa yan yana yazar o yüzden stringi numbere çevirmek gerekir
+
+         const stringNumber = number1.toString();
+         const calculateStringNumbers = stringNumber + number2;
+         console.log(calculateStringNumbers); // Numberi Stringe Çevirmek
+
+         console.log(calculate1);
+         console.log(calculate2);
+         console.log(calculate3);
+         console.log(calculate4);
+         console.log(calculate5);
+         console.log(calculate6);
+      </script>
+   </body>
+</html>
