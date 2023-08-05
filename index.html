@@ -12,7 +12,10 @@
       <script>
          console.log("Merhaba JS");
 
-         // DEĞİŞKENLER ve DEŞKEN OLUŞTURMA : const: tek değer atanır & let: istediginiz kadar değer verilebilir
+         //------------ DEĞİŞKENLER ve DEŞKEN OLUŞTURMA -------------
+
+         //  const: tek değer atanır & let: istediginiz kadar değer verilebilir
+
          const isim = "Mami"; // String değişken türü, düz yazı tipindeki değerleri tutar ve bunu " " işaretleri içinde tutarız.
          // const isim; ---> Bu şekilde tanımlama yapılamaz. Bir başlangıc değeri (initial) değeri giriilmesi zorunludur
          let soyisim = "Delibas";
@@ -25,7 +28,7 @@
          soyisim = "Yeni Soyad";
          console.log(soyisim);
 
-         // MATEMATİKSEL İFADELER
+         //------------ MATEMATİKSEL İFADELER ------------
 
          const number1 = 5; // number : tırnak işareti kullanılmaz
          const number2 = 10;
@@ -49,6 +52,35 @@
          console.log(calculate4);
          console.log(calculate5);
          console.log(calculate6);
+
+         //------------- DEĞİŞKEN TİPLERİ DEVAM --------------
+
+         // ARRAY : DİZİLER
+
+         const sayi1 = 5;
+         const sayi2 = 10;
+         const sayi3 = 15;
+         const sayi4 = 20;
+         const sayi5 = 25;
+         // yerine
+         const sayilar = [5, 10, 15, 20, 25, 30, "Selam"];
+         console.log(sayilar);
+         console.log("Sayilarin ilk elemanı : " + sayilar[0]);
+         console.log("Sayılar array'inin eleman sayısı : " + sayilar.length);
+
+         const elemanSayisi = sayilar.length;
+         const sonEleman = sayilar[elemanSayisi - 1];
+         console.log("Son Eleman : " + sonEleman);
+
+         let sayi = [5, 8, 50, 32, 45];
+         let firstSayi = sayi[0];
+         // let ikinci = sayi[4];
+         // let topla = firstSayi * ikinci;
+         let sayiUzunluk = sayi.length;
+         let endSayi = sayi[sayiUzunluk - 1];
+         // console.log(firstSayi * endSayi);
+         let carp = firstSayi * endSayi;
+         console.log(carp);
       </script>
    </body>
 </html>
