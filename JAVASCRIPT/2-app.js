@@ -1,5 +1,5 @@
 // ! -----------------------------------------------------------------
-console.log("---------------- ARRAY ---------------");
+console.log("---------------- ARRAY [ DİZİLER ] ---------------");
 // ! -----------------------------------------------------------------
 
 let ogrenciler = ["Canberk", "Ahmet", "Mehmet", "Veli", 5, "Fatma", "Mami"];
@@ -17,14 +17,14 @@ console.log("Son Eleman : " + sonOgrenci);
 ogrenciler.push("Sevgi"); // push : Dizinin sonuna eleman eklemek için kullanılır
 console.log(ogrenciler);
 
-//! PRATİK ÖRNEK
+console.log("---------------- PRATİK ÖRNEK ---------------");
 
 let meyve = [
   "Çilek",
   "Erik",
   "Karpuz",
   "Şeftali",
-  "kayısı",
+  "Kayısı",
   "Ananas",
   "Armut",
   "Elma",
