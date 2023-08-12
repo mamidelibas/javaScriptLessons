@@ -79,17 +79,17 @@ console'da "Toplam eleman Sayısı3'ten küçüktür"
 4- Eleman sayısı 3'e eşit ise "Toplam 3 eleman var" 
 şeklinde mesaj olacak
 5- Eğer toplam eleman sayısı 3'ten büyük ise
-"Fazla eleman mevcuttur" şeklinde mesaj olacak 
+"3'ten Fazla eleman mevcuttur" şeklinde mesaj olacak 
 
 */
 
 let animalsList = ["Aslan", "Kedi", "Yılan"];
 if (animalsList.length < 3) {
-  console.log("Eleman sayısı 3 ten küçüktür");
+  console.log("Eleman sayısı 3'ten küçüktür");
 } else if (animalsList.length == 3) {
-  console.log("Eleman sayısı 3'tür");
+  console.log("Toplam 3 eleman var");
 } else {
-  console.log("Eleman sayısı 3'ten fazladır");
+  console.log("3'ten Fazla eleman mevcuttur");
 }
 
 animalsList.map((a, index) =>
