@@ -67,7 +67,48 @@ if (yeniSayi == 4) {
   console.log("ELSE Çalıştı!");
 }
 
+let yeniDegisken = "selam";
+if (yeniDegisken == "selam") console.log("Şart Doğru");
+else console.log("Şart yanlıştır");
+
+let sayilar = [1, 3, 8, 10, 20, 25];
+let sayilarDokuzdanBuyuk = [];
+sayilar.map((sayi) => {
+  if (sayi > 9) {
+    sayilarDokuzdanBuyuk.push(sayi);
+  }
+});
+
+console.log("9'dan büyük sayılar : ", sayilarDokuzdanBuyuk);
+
 console.log("---------------- PRATİK ÖRNEK ---------------");
+
+let meyve = [
+  "Çilek",
+  "Erik",
+  "Karpuz",
+  "Şeftali",
+  "Kayısı",
+  "Ananas",
+  "Armut",
+  "Elma",
+  "Nektari",
+  "Ayva",
+];
+console.log(meyve);
+
+meyve.push("Kiraz");
+console.log(meyve);
+
+let ilkMeyve = meyve[0];
+console.log("İlk meyve : " + ilkMeyve);
+
+// let toplamMeyve = meyve.length;
+// let sonMeyve = meyve[toplamMeyve - 1];
+let sonMeyve1 = meyve[meyve.length - 1];
+console.log("Son meyve : " + sonMeyve1);
+
+console.log("---- İf Else Örneği ----");
 
 /*
 
@@ -95,30 +136,3 @@ if (animalsList.length < 3) {
 animalsList.map((a, index) =>
   console.log("Hayvanlar:", a + ".  Sırası : " + index)
 );
-
-//!
-
-let meyve = [
-  "Çilek",
-  "Erik",
-  "Karpuz",
-  "Şeftali",
-  "Kayısı",
-  "Ananas",
-  "Armut",
-  "Elma",
-  "Nektari",
-  "Ayva",
-];
-console.log(meyve);
-
-meyve.push("Kiraz");
-console.log(meyve);
-
-let ilkMeyve = meyve[0];
-console.log("İlk meyve : " + ilkMeyve);
-
-// let toplamMeyve = meyve.length;
-// let sonMeyve = meyve[toplamMeyve - 1];
-let sonMeyve1 = meyve[meyve.length - 1];
-console.log("Son meyve : " + sonMeyve1);
