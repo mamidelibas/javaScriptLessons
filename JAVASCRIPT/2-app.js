@@ -73,13 +73,17 @@ else console.log("Şart yanlıştır");
 
 let sayilar = [1, 3, 8, 10, 20, 25];
 let sayilarDokuzdanBuyuk = [];
+let sayilarDokuzdanKucuk = [];
 sayilar.map((sayi) => {
   if (sayi > 9) {
     sayilarDokuzdanBuyuk.push(sayi);
+  } else {
+    sayilarDokuzdanKucuk.push(sayi);
   }
 });
 
 console.log("9'dan büyük sayılar : ", sayilarDokuzdanBuyuk);
+console.log("9'dan küçük sayılar : ", sayilarDokuzdanKucuk);
 
 console.log("---------------- PRATİK ÖRNEK ---------------");
 
