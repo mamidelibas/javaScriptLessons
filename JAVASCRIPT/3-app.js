@@ -40,3 +40,30 @@ let newAges = ages1.filter((a) => a > 18);
 
 // filter ile önce 15'ten büyükleri bulur map ile yeni dizinin içinde döner
 // ages1.filter((a) => a > 15).map((b) => console.log("Eleman :", b));
+
+console.log("---------------- Dizilerde KISAYOL [Array Deconstruction]");
+
+let names1 = ["Ali", "Ahmet", "Ayşe", "Mehmet", "Mustafa"];
+
+// let firstName = names1[0];
+// console.log("İlk eleman :", firstName);
+// let secondName = names[1];
+// console.log("İkinci eleman :", secondName);
+
+//todo YERİNE KISAYOL OLARAK
+
+let [firstName, secondName, thirdName, forthName] = names1;
+// console.log("İlk eleman :", firstName);
+// console.log("İkinci eleman :", secondName);
+// console.log("Üçüncü eleman :", thirdName);
+// console.log("Dördüncü eleman :", forthName);
+
+let ages2 = [15, 22, 12, 43, 33, 11, 18, 27, 39, 55, 20, 6, 13];
+let [firstNumber, secondNumber, thirdNumber, ...rest] = ages2;
+// console.log(
+//   "Almak istedigim ilk 3 eleman ve diğer sayıların dizisi: ",
+//   firstNumber,
+//   secondNumber,
+//   thirdNumber,
+//   rest
+// );
