@@ -102,3 +102,5 @@ let students = [
 ];
 let student1 = students.filter((ogrenci) => ogrenci.notlar.matematik <= 50);
 console.log(student1);
+
+// console.log(students[1].notlar.matematik) // 1.indexteki velinin matematik notu
