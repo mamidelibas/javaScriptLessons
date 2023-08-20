@@ -18,6 +18,6 @@ let degistir = document.getElementsByClassName("h1Tag");
 
 function odev() {
   document.getElementById("pTag").innerHTML = "Muhammet Delibaş";
-  degistir[1].innerHTML = "20-03-2023";
+  degistir[1].innerHTML = "20-08-2023";
 }
 setTimeout(odev, 2000);
