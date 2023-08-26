@@ -1,7 +1,8 @@
 console.log("---------------- DOM MANİPULATİON ");
 // JavaScript ile Html dökümanına yeni elementler ekleme silme değiştirmek icin kullanılır.
 
-//! ELEMANLARI YAKALAMAK
+//! getElementById ve getElementByClassName : Elementleri yakalamak
+
 let secondText = document.querySelector("#secondText");
 // let secondText = document.getElementById("secondText");
 console.log(secondText); // id normal şekilde döner id'si aynı olan İLK olanı getirir
@@ -14,6 +15,8 @@ function yaziyiGuncelle() {
 }
 setTimeout(yaziyiGuncelle, 2000);
 
+//!
+
 let degistir = document.getElementsByClassName("h1Tag");
 
 function odev() {
@@ -21,3 +24,5 @@ function odev() {
   degistir[1].innerHTML = "20-08-2023";
 }
 setTimeout(odev, 2000);
+
+//!

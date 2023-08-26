@@ -104,3 +104,76 @@ let student1 = students.filter((ogrenci) => ogrenci.notlar.matematik <= 50);
 console.log(student1);
 
 // console.log(students[1].notlar.matematik) // 1.indexteki velinin matematik notu
+
+//! Objeceler ile ilgili extra : OBJE İÇİNDE FUNCTİONLAR
+console.log("---------------- Obje içinde Function");
+
+let firstPerson = {
+  firstName: "Muhammet",
+  lastName: "Delibaş",
+  age: 24,
+  isStudent: false,
+  grades: {},
+  adresses: [],
+  sayHello: function (isim) {
+    console.log("Merhabas " + isim);
+  },
+  bornYear: function () {
+    return 2023 - this.age;
+  },
+
+  //! JQuery Kısayol
+
+  getFullName: function () {
+    return `${this.firstName} ${this.lastName}`;
+  },
+};
+
+// console.log(firstPerson.sayHello("Mami"));
+// console.log(firstPerson.firstName);
+// console.log("Doğum yılı :", firstPerson.bornYear());
+// console.log("Kullanıcının Adı ve Soyadı : ", firstPerson.getFullName());
+
+function selamSoyle(isim, yas) {
+  // console.log("Merhaba " + isim + " Yaşı: " + yas);
+}
+selamSoyle("Ahmet", 25);
+
+//! hesOwnProperty : Var mı Yok mu? Key aramak için kullanılır
+
+const firtsNameVarMi = firstPerson.hasOwnProperty("firstName");
+// console.log("FirstName var mı : ", firtsNameVarMi); // true döner
+
+const emailVarMi = firstPerson.hasOwnProperty("email");
+// console.log("Email var mı : ", emailVarMi); // false döner
+
+//! ----------- KÖTÜ KOD YAZIMI
+
+let kullanicininAdi = firstPerson.firstName;
+let kullanicininSoyadi = firstPerson.lastName;
+let kullaniciYasi = firstPerson.age;
+let kullaniciOgrenciMi = firstPerson.isStudent;
+// console.log(
+//   kullanicininAdi + kullanicininSoyadi + kullaniciYasi + kullaniciOgrenciMi
+// );
+
+//! YERİNE --->
+
+let { firstName, lastName, age, isStudent } = firstPerson;
+// console.log(firstName, lastName, age, isStudent);
+
+//! BİR OBJEYİ KOPYALAMA ve OBJEYE EKLEME YAPMA (...) Sprit operatör
+console.log(
+  "---------------- Obje Kopyalama ve Ekleme Cıkartma Yapma : SPİRİT"
+);
+
+// console.log("---------------- Sprit Operatör [ Obje Kopyalama ]");
+
+let kopyaObje = {
+  ...firstPerson,
+  email: "test@gmail.com",
+  firstName: "Mehmet",
+};
+// kopyaObje.firstName="Mami"
+delete kopyaObje.lastName;
+// console.log(kopyaObje);

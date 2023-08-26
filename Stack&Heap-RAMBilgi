@@ -1,0 +1,27 @@
+// RAM BÖLÜMLERİ
+
+// 1- STACK
+
+// Primitive Değişken Türleri - İlkel
+
+// -string
+// -number
+// -boolein
+// -array
+
+// //Örnek
+// let number1 = 5;
+// let number2 = number1;
+// number1 = number1 + 1;
+// console.log("test",number2); // number2 'ye +1 eklenemez sonuc 5'tir.
+
+// 2-HEAP
+
+// //Örnek
+// let obje1 = {age:25};
+// let obje2 = obje1;
+// obje1.age = 30;
+// console.log("Test2", obje2); // obje2 30 olur.
+
+// -object
+// -function
