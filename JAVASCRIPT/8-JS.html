@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - 8</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .popup {
+        background-color: rgb(78, 78, 78);
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        gap: 10px;
+        padding: 30px;
+        margin-top: 30vw;
+        border-radius: 5px;
+        box-shadow: 1px 3px 10px 1px rgb(87, 87, 87);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <input
+      type="text"
+      id="kullaniciAdi"
+      placeholder="Kullanıcı adını giriniz."
+    /> -->
+    <br />
+    <!-- <input type="submit" value="Giriş Yap" id="girisButonu" /> -->
+    <br />
+    <input
+      type="submit"
+      value="Hesap Oluştur"
+      id="uyeOlButonu"
+      class="bg-blue-500"
+      style="
+        border: 1px white solid;
+        padding: 3px;
+        margin-left: 40vw;
+        margin-bottom: 15px;
+      "
+    />
+    <h2 id="test">Burası da çalışır</h2>
+
+    <button onclick="kolayFonksiyon()">Click Eventi Pratik</button>
+
+    <p style="position: absolute; opacity: 0.5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit commodi
+      corporis iusto minima ad natus mollitia, laboriosam, debitis quam
+      consequatur ipsam fuga sapiente perspiciatis ullam. Error sapiente
+      quisquam fugiat, architecto officia neque quae cupiditate maxime, ab,
+      tenetur doloremque repellendus fuga! Cumque, quasi vitae eligendi velit
+      nulla eveniet ratione! Deleniti assumenda nesciunt unde, laborum, ullam
+      consequatur fugiat iste accusamus omnis eum, sint alias quis. Placeat a
+      harum, consectetur voluptates porro laboriosam quisquam, nesciunt ipsam
+      beatae iste exercitationem, culpa maiores illo deserunt quaerat quae nisi
+      consequatur autem at voluptatibus commodi impedit fugit? Voluptatem quae
+      nemo mollitia nesciunt eum, labore minus vero tempora laudantium
+      veritatis. Blanditiis eaque temporibus fugiat optio itaque incidunt
+      voluptatem, animi voluptas illum, exercitationem, quam dignissimos. Illo
+      porro repellat amet dicta architecto, corrupti exercitationem sed
+      provident distinctio, animi eius. Veniam eos modi nulla, molestias eum
+      doloremque reprehenderit animi iste sit ipsam sint natus saepe amet odio
+      laudantium? Rerum, eos labore! Exercitationem eum suscipit alias vero cum
+      necessitatibus molestiae autem eos at natus nobis, iure totam inventore
+      quam accusamus quidem consequatur sed nesciunt sunt magnam. Quaerat id
+      repellendus eveniet nobis quos rem alias illo, perspiciatis aspernatur
+      dolores architecto, sunt nesciunt! Natus ad excepturi, maiores ratione
+      magnam doloremque voluptate reiciendis minima praesentium consectetur odio
+      perferendis recusandae qui sit suscipit, vitae animi impedit officiis
+      quae, explicabo pariatur sapiente delectus! Iste error quos veritatis
+      exercitationem vero ad atque dolorem voluptates earum quaerat in deserunt
+      enim labore doloribus nostrum porro nemo dignissimos eaque, debitis
+      repellendus. Architecto, quibusdam odit ab minus temporibus veritatis
+      repudiandae. Sed, laboriosam unde quod, iste eum maxime adipisci vero
+      debitis sapiente cupiditate corrupti ullam consequatur necessitatibus
+      blanditiis officiis. Et, iusto perferendis rem voluptatum velit quo
+      voluptas officia dolor cumque neque enim beatae voluptatem a aliquam quasi
+      dolore optio totam, id autem, fugiat magni corrupti eaque vitae. Pariatur
+      itaque quasi quam reprehenderit sit at quibusdam ea natus tempore sunt
+      modi iste placeat ipsa unde nesciunt iure, fuga harum amet sed! Qui,
+      debitis repudiandae. Id accusantium error iste. Accusantium veniam est
+      nesciunt neque aut tenetur natus quidem esse possimus harum, explicabo
+      recusandae ut debitis alias eveniet sint fugiat voluptas? Dolorem aut odit
+      quo debitis, quas distinctio hic recusandae nobis ipsa libero eveniet
+      ullam ratione nihil molestiae sit Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Sed omnis voluptas esse totam inventore placeat minus.
+      Est dolor eveniet repellat dicta voluptatem ipsum, dolore Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Non cum voluptate aliquid
+      architecto temporibus doloremque numquam ipsa dicta molestiae Lorem ipsum
+      dolor, sit amet consectetur adipisicing elit. Nulla aut cum aliquam nemo
+      corporis, illum magni neque nam qui aperiam consequuntur nisi saepe
+      doloribus vero ea, numquam nostrum molestias. Ea voluptas accusamus sint,
+      similique quia, sequi possimus natus dolor porro deserunt at fugit tempora
+      qui quam magni minima vero! Dicta. modi. praesentium voluptatum obcaecati
+      officiis beatae tempore. corrupti earum voluptates quia officia delectus
+      ipsum sapiente magnam. Qui, cum! Autem, obcaecati. Ipsam officia eum
+      architecto esse est officiis, id vero. At laudantium neque dolorem qui
+      quasi veritatis commodi possimus modi aut, iure voluptates unde. Nemo
+      velit fuga, consequatur labore alias saepe quas dolor sed laudantium
+      accusantium illum reprehenderit voluptate quis maiores nesciunt! Ipsum
+      delectus, eos distinctio quasi accusamus sint modi deleniti impedit ipsam
+      voluptate soluta, doloribus illum, reprehenderit totam laboriosam? Cumque
+      veritatis eligendi libero excepturi esse ipsum optio aliquid id dolore
+      autem! Ea dicta reiciendis molestias doloremque, assumenda tenetur omnis.
+    </p>
+
+    <div class="hidden" id="popupKapsayici">
+      <div class="popup">
+        <input type="text" placeholder="Kullanıcı Adı" class="kullaniciAdi" />
+        <input type="text" placeholder="Email Adresi" class="emailAdresi" />
+        <input type="password" placeholder="Şifre Oluştur" class="sifre" />
+        <input
+          type="submit"
+          value="Üye Ol"
+          class="uyeOl bg-blue-500"
+          style="border: 1px white solid; padding: 3px; margin-bottom: 15px"
+        />
+      </div>
+    </div>
+
+    <script src="8-app.js"></script>
+  </body>
+</html>
